@@ -25,7 +25,7 @@ public class UserController {
 	// get all the users
 	@GetMapping
 	public ResponseEntity<List<User>> usersList(){
-		List<User> users = userServ.getAll();
+		List<User> users = userServ.getAllUsers();
 		
 		if(users.isEmpty()) {
 			return ResponseEntity.noContent().build();
@@ -49,7 +49,7 @@ public class UserController {
 	// you must use the annotation '@PostMapping' because you're going to add some data so you have to use "POST". "GET" is only for getting data
 	@PostMapping
 	public ResponseEntity<User> saveUser(@RequestBody User user){
-		User userAdded = userServ.save(user);
+		User userAdded = userServ.saveUser(user);
 		return ResponseEntity.ok(userAdded);
 	}
 
