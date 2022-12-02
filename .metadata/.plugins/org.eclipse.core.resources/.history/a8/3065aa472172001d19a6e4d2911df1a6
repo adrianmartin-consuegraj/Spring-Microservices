@@ -1,0 +1,24 @@
+// 2. UserRepository is linked through the creation of the userRepo attribute which is an object type 'UserRepository'
+
+package com.user.service.service;
+
+import java.util.List;
+import org.springframework.stereotype.Service;
+import com.user.service.entities.User;
+import com.user.service.repository.UserRepository;
+
+@Service
+public class UserService {
+	
+	private UserRepository userRepo;
+	
+	private List<User> getAll(){
+		return userRepo.findAll();
+	}
+	
+	// with the method 'orElse(null)' we provide a null in case there's no User found
+	private User getUserById(int id) {
+		return userRepo.findById(id).orElse(null);
+	}
+
+}
