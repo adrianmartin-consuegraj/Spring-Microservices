@@ -92,5 +92,4 @@ INDEX VERSION 1.131+C:\Projects\Microservices\.metadata\.plugins\org.eclipse.jdt
 973281716.index
 2380284911.index
 3843674177.index
-1056644017.index
 1217325179.index
