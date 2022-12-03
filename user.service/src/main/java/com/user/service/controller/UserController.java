@@ -67,7 +67,7 @@ public class UserController {
 	}
 	
 	// this method is used in the Service to connect the Beans of the microservice 'motorcycle'
-		@GetMapping("cars/{userId}")
+		@GetMapping("motorcycles/{userId}")
 		public ResponseEntity<List<Motorcycle>> getMotorcyclesOfAnUser(@PathVariable("userId") int userId){
 			User user = userServ.getUserById(userId);
 			if(user==null) {
