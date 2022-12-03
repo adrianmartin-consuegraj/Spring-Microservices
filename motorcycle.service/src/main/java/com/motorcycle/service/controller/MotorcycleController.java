@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.motorcycle.service.model.Motorcycle;
+
+import com.motorcycle.service.entity.Motorcycle;
 import com.motorcycle.service.service.MotorcycleService;
 
 @RestController

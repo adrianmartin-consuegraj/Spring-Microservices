@@ -3,7 +3,8 @@ package com.motorcycle.service.service;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.motorcycle.service.model.Motorcycle;
+
+import com.motorcycle.service.entity.Motorcycle;
 import com.motorcycle.service.repository.MotorcycleRepository;
 
 @Service
