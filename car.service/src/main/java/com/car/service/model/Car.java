@@ -1,19 +1,25 @@
 package com.car.service.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "cars")
 public class Car {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private int id;
-	
+	@Column(name = "brand")
 	private String brand;
+	@Column(name = "model")
 	private String model;
+	@Column(name = "userId")
 	private int userId;
 	
 	// getters & setters

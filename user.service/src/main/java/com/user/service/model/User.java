@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "spring-microservices")
+@Table(name = "users")
 public class User {
 	
 	// 'id' attribute is the primary key, that's why we add the annotation '@Id'
